@@ -1,0 +1,43 @@
+*{
+    border :0px;
+    margin :0px;
+    font-size:100%;
+    font : inherit;
+}
+
+
+.top {
+    background-color: rgb(255,244,227);
+
+}
+
+.btns {
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btns button {
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: rgb(50,63,255);
+    color: white;
+}
+
+.me img {
+    width: 400px;
+    height: auto;
+    padding: 100px;
+    border-radius: 150px;
+}
+
+.me {
+    display: flex;
+    justify-content: space-around;
+}
+
+.me h1 {
+    padding: 200px;
+    font-size: 20px;
+}

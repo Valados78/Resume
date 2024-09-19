@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Злобин Владислав</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/65bc7bcce3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <div class="btns">
+                <button>
+                    Обо мне
+                </button>
+                <button>
+                    Образование и навыки
+                </button>
+                <button>
+                    Проекты
+                </button>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="me">
+            <img src="img/IMG_20240707_150917_502.jpg" alt="">
+            <div class="about">
+                <h1>Злобин Владислав Евгеньевич <br>
+                    Родился и проживаю в г. Ставрополе <br>
+                    Среднее-профессиональное образование <br>
+                    В данный момент получаю высшее образование по направлению подготовки - Прикладная информатика. Заочная форма обучения. <br> <br>
+                    
+                    Развит навык работы с ПК и его программами (Word, Excel, PowerPoint, PhotoShop). Всегда открыт к обучению. <br>
+                    В данный момент изучаю JavaScript. Знаком с HTML, CSS, Python и Git. <br> <br>
+                    
+                    Моя основная цель на ближайшее время набраться как можно больше опыта и навыков.</h1>
+            </div>
+        </div>
+
+        <div class="education">
+            <h1>Немного об образовании</h1> <br>
+            <h2>Среднее специальное</h2>
+            <h3>Получил в 2021 году в Колледже связи им. Героя Советского Союза В.А. Петрова. Направление Многоканальные телекоммуникационные системы. <br>
+            Именно здесь в полной мере заинтересовался информационными системами и программированием</h3> <br>
+            <h2>Высшее (бакалвриат)</h2>
+            <h3>После колледжа и срочной службы в армии, а именно в 2022 году, поступил на кафедру Прикладной информатики, где учусь до сих пор. <br> Заочная форма. Выпуск на 2026 год.</h3>
+        </div>
+        <div class="skills" id="skills">
+            <h1>Основные мои навыки</h1>
+            <button>HTML</button>
+            <button>CSS</button>
+            <button>JavaScript</button>
+            <button>Python</button>
+            <button>Computer Science</button>
+        </div>
+
+        <div class="projects">
+            <h1>Проекты</h1>
+            <h2>Мои проекты в основе своей были связаны с учебой.</h2> <br>
+            <li>Лэндинг сделанный во время прохождения курса в корпоративном университете Сбера </li>
+            
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+    <script>
+        let skills = document.querySelectorAll(".skills button");
+        let colors = ["orange", "blue", "yellow", "green", "grey"];
+        skills.forEach((el, index) => {
+            el.style.backgroundColor = colors[index];
+        });
+    </script>
+</body>
+
+</html>

@@ -3,30 +3,30 @@
     margin :0px;
     font-size:100%;
     font : inherit;
+    font-family: "Lexend", sans-serif;
 }
 
 
 .top {
-    background-color: rgb(255,244,227);
-
+    
 }
 
 .btns {
     padding: 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
 }
 
 .btns button {
     width: 200px;
     height: 50px;
-    border-radius: 20px;
-    background-color: rgb(50,63,255);
-    color: white;
+    border: none;
+    background: none;
+    font-size: 17px;
 }
 
 .me img {
-    width: 400px;
+    width: 450px;
     height: auto;
     padding: 100px;
     border-radius: 150px;
@@ -40,4 +40,65 @@
 .me h1 {
     padding: 200px;
     font-size: 20px;
+}
+
+.education {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    margin: 40px;
+}
+
+.education h1 {
+    font-size: 40px;
+    align-self: center;
+}
+
+.education h2 {
+    font-size: 30px;
+    padding: 20px;
+}
+
+
+.education h3 {
+    font-size: 18px;
+    padding: 18px;
+}
+
+
+  
+.skills h1 {
+    font-size: 38px;
+    display: flex;
+    justify-content: center;
+}
+  
+.skills__btn button {
+    font-size: 30px;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 70px;
+}
+
+.projects h1{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.projects h2 {
+    font-size: 25px;
+    margin: 20px 20px 20px 70px;
+}
+
+.projects a {
+    font-size: 25px;
+    margin: 20px 20px 20px 70px;
+    text-decoration: none;
+}
+
+.bottom {
+    background-color: black;
+    padding: 70px;
+    margin-top: 70px;
 }

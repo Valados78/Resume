@@ -22,7 +22,16 @@
     height: 50px;
     border: none;
     background: none;
-    font-size: 17px;
+    font-size: 25px;
+    color: rgb(69,69,69);
+}
+
+
+
+.btns__changed {
+    cursor: pointer;
+    color: black !important; 
+    font-size: 26px !important;
 }
 
 .me img {
@@ -72,9 +81,13 @@
     display: flex;
     justify-content: center;
 }
-  
+
+.skills__btn {
+    display: flex;
+}
+
 .skills__btn button {
-    font-size: 30px;
+    font-size: 29px;
     border-radius: 10px;
     padding: 30px;
     margin: 70px;
@@ -93,12 +106,30 @@
 
 .projects a {
     font-size: 25px;
-    margin: 20px 20px 20px 70px;
+    margin: 20px 25px 20px 70px;
     text-decoration: none;
+    display: flex;
+    color: rgb(69,69,69);
+}
+
+.projects a:hover {
+    color: black;
 }
 
 .bottom {
     background-color: black;
-    padding: 70px;
-    margin-top: 70px;
+    padding: 50px;
+    margin-top: 50px;
+}
+
+.bottom__text a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.bottom__text a:hover{
+    font-size: 15px;
 }

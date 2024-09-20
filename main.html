@@ -67,6 +67,7 @@
                 <button>CSS</button>
                 <button>JavaScript</button>
                 <button>Python</button>
+                <button>Git</button>
                 <button>Computer Science</button>
             </div>
         </div>
@@ -77,17 +78,22 @@
             <a href="https://valados78.github.io/SberProj/" target="SberProj">Лэндинг сделанный во время прохождения
                 курса в корпоративном
                 университете Сбера </a>
-
+            <a href="https://github.com/Valados78" target="GitHub">GitHub</a>
         </div>
     </section>
     <footer>
         <div class="bottom">
-            <h1>GFGDGFDG</h1>
+            <div class="bottom__text">
+                <a href="https://hh.ru/resume/f3d7a63fff0d810aff0039ed1f395455543747">Контакты</a>
+                <a href="#">
+                    <i class="fa-solid fa-house-user"></i>
+                </a>
+            </div>
         </div>
     </footer>
     <script>
         let skills = document.querySelectorAll(".skills__btn button");
-        let colors = ["orange", "blue", "yellow", "green", "grey"];
+        let colors = ["rgb(242,101,39)", "rgb(46,157,215)", "rgb(254,218,59)", "green", "rgb(240,80,51)", "grey"];
         skills.forEach((el, index) => {
             el.style.backgroundColor = colors[index];
         });
@@ -98,6 +104,16 @@
                 section.scrollIntoView({ behavior: 'smooth' });
             }
         }
+
+        let topbtn = document.querySelectorAll(".btns button");
+        topbtn.forEach(element => {
+            element.addEventListener("mouseover", () => {
+                element.classList.add("btns__changed");
+            });
+            element.addEventListener("mouseout", () => {
+                element.classList.remove("btns__changed");
+            });
+        });
     </script>
 </body>
 

@@ -1,132 +1,401 @@
-*{
-    border :0px;
-    margin :0px;
-    font-size:100%;
-    font : inherit;
-    font-family: "Lexend", sans-serif;
+body {
+    font-family: 'Lexend';
+    font-weight: 400;
+    font-size: 14px;
 }
 
-
-.top {
-    
+.hide {
+    display: none !important;
 }
 
-.btns {
-    padding: 40px;
+.container {
+    max-width: 970px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+p {
+    color: #6a859c;
+    line-height: 1.8;
+}
+
+/* HEADER */
+
+.header {
+    padding: 20px 0;
+}
+
+.header__container {
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
-.btns button {
-    width: 200px;
-    height: 50px;
-    border: none;
-    background: none;
+.logo {
     font-size: 25px;
-    color: rgb(69,69,69);
+    line-height: 1;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: blue;
 }
 
-
-
-.btns__changed {
-    cursor: pointer;
-    color: black !important; 
-    font-size: 26px !important;
-}
-
-.me img {
-    width: 450px;
-    height: auto;
-    padding: 100px;
-    border-radius: 150px;
-}
-
-.me {
+.header__nav ul {
     display: flex;
-    justify-content: space-around;
 }
 
-.me h1 {
-    padding: 200px;
-    font-size: 20px;
+.header__nav li + li {
+    margin-left: 40px;
 }
 
-.education {
+.header__nav a {
+    font-size: 16px;
+    line-height: 20px;
+    color: #676770;
+    transition: color 0.3s;
+}
+
+.header__nav a:hover {
+    color: #0082F3;
+}
+
+.header__nav a:active {
+    color: #0062b6;
+}
+
+/* MAIN */
+
+.welcome {
+    min-height: 600px;
+    height: 80vh;
+    padding: 195px 0;
+    color: #fff;
     display: flex;
-    flex-direction: column;
-    padding: 50px;
-    margin: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: grey;
+    background-image: url(img/cityscape-new-york-city-sunset.jpg);
+    background-size: cover;
+    background-position: bottom;
 }
 
-.education h1 {
-    font-size: 40px;
-    align-self: center;
+.welcome__container {
+    font-size: 45px;
+    line-height: 1;
+    letter-spacing: 4px;
+    text-transform: uppercase;
 }
 
-.education h2 {
+.welcome__container h2{
+    animation: apear 3s;
+    text-shadow: black 1px 5px 10px;
+}
+
+.welcome__container a{
+    text-shadow: black 2px 5px 10px;
+}
+
+.welcome__button {
+    display: inline-block;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 10px 30px;
+    margin: 40px 0;
+    transition: border-color 0.4s, color 0.4s;
+}
+
+.welcome__button:hover {
+    color: #676770;
+    border: 1px solid #676770;
+}
+
+.about {
+    text-align: center;
+}
+
+.about__container {
+    font-size: 45px;
+    line-height: 1;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding: 200px 0;
+}
+
+.title {
     font-size: 30px;
-    padding: 20px;
-}
-
-
-.education h3 {
-    font-size: 18px;
-    padding: 18px;
-}
-
-
-  
-.skills h1 {
-    font-size: 38px;
-    display: flex;
-    justify-content: center;
-}
-
-.skills__btn {
-    display: flex;
-}
-
-.skills__btn button {
-    font-size: 29px;
-    border-radius: 10px;
-    padding: 30px;
-    margin: 70px;
-}
-
-.projects h1{
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
-}
-
-.projects h2 {
-    font-size: 25px;
-    margin: 20px 20px 20px 70px;
-}
-
-.projects a {
-    font-size: 25px;
-    margin: 20px 25px 20px 70px;
-    text-decoration: none;
-    display: flex;
-    color: rgb(69,69,69);
-}
-
-.projects a:hover {
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
     color: black;
 }
 
-.bottom {
-    background-color: black;
-    padding: 50px;
-    margin-top: 50px;
+.subtitle {
+    font-size: 17px;
+    line-height: 1.2;
+
 }
 
-.bottom__text a{
-    color: white;
-    text-decoration: none;
+.card-about {
     display: flex;
     justify-content: center;
-    padding: 10px;
+    padding: 30px 0;
 }
 
+.img-about {
+    width: 300px; 
+}
+
+
+.img-about img{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 40px;
+}
+
+.text-about {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: none;
+    text-align: start;
+    font-size: 15px;
+    line-height: 1.1;
+    width: 400px;
+    margin-left: 40px;
+    padding: 20px;
+}
+
+.projects {
+    background-color: #1f1e1e;
+}
+
+.title-projects {
+    padding: 30px 0;
+    font-size: 30px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.title-projects p {
+    font-size: 17px;
+    line-height: 1.2;
+    color: #676770;
+}
+
+.card-projects {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-projects {
+    width: 45%;
+    cursor: pointer;
+    padding: 2%;
+    margin: 0 30px;
+}
+
+.img-projects p{
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+
+.img-projects img{
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+
+.skills {
+
+}
+
+.skills__container {
+
+}
+
+.title-skills {
+    padding: 30px 0;
+    font-size: 30px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.title-skills p{
+    font-size: 17px;
+    line-height: 1.2;
+    color: #676770;
+}
+
+/* МЕНЯЮЩИЙСЯ РАЗДЕЛ */
+
+.skills-buttons {
+    
+}
+
+.skills__nav {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.skills__nav button {
+    padding: 5px 30px;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+    background-color: #92A0AD;
+    border-radius: 10px;
+    margin: 0 20px;
+}
+
+.skills__nav button.active {
+    background-color: #2E80B6;
+}
+
+.skills__item {
+    padding-bottom: 30px;
+}
+
+
+@keyframes apear {
+    from {
+        opacity: 0.3;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.skills-discr {
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: apear 1s;
+}
+
+.education-discr {
+    font-size: 20px;
+    padding: 10px 20px;
+    animation: apear 1s;
+}
+
+.education-discr h3{
+    font-size: 40px;
+    color: #92A0AD;
+}
+
+.education-discr p{
+    font-size: 20px;
+    color: black;
+}
+
+.footer {
+    background-color: #1f1e1e;
+}
+
+.footer__info {
+    font-size: 18px;
+    color: #92A0AD;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px 20px;
+}
+
+.footer-contacts a:hover {
+    color: #0082F3;
+    transition: color 0.2s;
+}
+
+@media (max-width: 720px) {
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .header h1{
+        font-size: 15px;
+    }
+
+    .header a{
+        font-size: 12px;
+    }
+
+    .welcome__container h2{
+        font-size: 20px;
+    }
+
+    .welcome__container a{
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .card-about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-about {
+        padding: 40px 20px 0 20px;
+        
+    }
+
+    .text-about h2 {
+        font-size: 12px;
+    }
+
+    .card-projects {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+    }
+
+    .card-projects p{
+        font-size: 10px;
+    }
+
+    .card-projects img{
+        border-radius: 10px;
+    }
+
+    .img-projects {
+        width: 200px;
+    }
+
+    .skills__nav {
+        font-size: 9px;
+
+    }
+
+    .skills__nav button{
+        padding: 2px 4px;
+    }
+
+
+
+}

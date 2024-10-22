@@ -1,121 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Злобин Владислав</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/iconpage.jpg" type="image/jpg">
-    <script src="https://kit.fontawesome.com/65bc7bcce3.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
-        rel="stylesheet">
-</head>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="initial-scale=2.0, width=device-width">
+        <title>Злобин Владислав</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="img/iconpage.jpg" type="image/jpg">
+        <script src="https://kit.fontawesome.com/65bc7bcce3.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+            rel="stylesheet">
+    </head>
 <body>
-    <header>
-        <div class="top">
-            <div class="btns">
-                <button onclick="scrollIntoSection('about')">
-                    Обо мне
-                </button>
-                <button onclick="scrollIntoSection('education')">
-                    Образование и навыки
-                </button>
-                <button onclick="scrollIntoSection('projects')">
-                    Проекты
-                </button>
-            </div>
+    <header class="header">
+        <div class="container header__container">
+            <h1 class="logo">Resume</h1>
+            <nav class="header__nav">
+                <ul> 
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-    <section>
-        <div class="me">
-            <img src="img/IMG_20240707_150917_502.jpg" alt="">
-            <div class="about" id="about">
-                <h1>Злобин Владислав Евгеньевич <br>
-                    Родился и проживаю в г. Ставрополе <br>
-                    Среднее-профессиональное образование <br>
-                    В данный момент получаю высшее образование по направлению подготовки - Прикладная информатика.
-                    Заочная форма обучения. <br> <br>
-
-                    Развит навык работы с ПК и его программами (Word, Excel, PowerPoint, PhotoShop). Всегда открыт к
-                    обучению. <br>
-                    В данный момент изучаю JavaScript и C#. Знаком с HTML, CSS, Python и Git. <br> <br>
-
-                    Моя основная цель на ближайшее время - набраться как можно больше опыта и навыков.</h1>
+    <content class="main">
+        <section class="welcome">
+            <div class="welcome__container">
+                <h2>Здравствуйте</h2>
+                <div class="welcome__button">
+                    <a href="#about" class="link">Посмотреть</a>
+                </div>
             </div>
-        </div>
+        </section>
+        <section class="about">
+            <div class="about__container" id="about">
+                <div class="title-about">
+                    <h3 class="title">Обо мне</h3>
+                    <p class="subtitle">Кратко</p>
+                </div>
+                <div class="card-about">
+                    <div class="img-about">
+                        <img src="img/IMG_20240707_150917_502.jpg" alt="">
+                    </div>
+                    <div class="text-about">
+                        <h2>Злобин Владислав Евгеньевич <br>
+                            Родился и проживаю в <br> г. Ставрополе <br><br>
 
-        <div class="education" id="education">
-            <h1>Немного об образовании</h1> <br>
-            <h2>Среднее специальное</h2>
-            <h3>Получил в 2021 году в Колледже связи им. Героя Советского Союза В.А. Петрова. Направление
-                "Многоканальные
-                телекоммуникационные системы". <br>
-                Именно здесь в полной мере заинтересовался информационными системами и программированием</h3> <br>
-            <h2>Высшее (бакалавриат)</h2>
-            <h3>После колледжа и срочной службы в армии, а именно в 2022 году, поступил на кафедру Прикладной
-                информатики Северо-Кавказского Федерального Университета, где учусь до сих пор. <br> Заочная форма.
-                Выпуск на 2026 год.</h3>
-        </div>
-        <div class="skills" id="skills">
-            <h1>Основные мои навыки</h1>
-            <div class="skills__btn">
-                <button>HTML</button>
-                <button>CSS</button>
-                <button>JavaScript</button>
-                <button>Python</button>
-                <button>Git</button>
-                <button>Computer Science</button>
+                            Развит навык работы с ПК и его программами (Word, Excel, PowerPoint, PhotoShop). Всегда открыт к
+                            обучению. <br>
+                            В данный момент изучаю React <br> и C#. Знаком с HTML, CSS, JS, Python и Git. <br> <br>
+
+                            Моя основная цель - <br> набраться как можно <br> больше опыта и навыков.</h2>
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <div class="projects" id="projects">
-            <h1>Проекты</h1>
-            <h2>Мои проекты в основе своей были связаны с учебой.</h2> <br>
-            <a href="https://valados78.github.io/SberProj/" target="SberProj">Лэндинг сделанный во время прохождения
-                курса в корпоративном
-                университете Сбера </a>
-            <a href="https://github.com/Valados78" target="GitHub">GitHub</a>
-        </div>
-    </section>
-    <footer>
-        <div class="bottom">
-            <div class="bottom__text">
-                <a href="https://hh.ru/resume/f3d7a63fff0d810aff0039ed1f395455543747">Контакты</a>
-                <a href="#">
-                    <i class="fa-solid fa-house-user"></i>
-                </a>
+        </section>
+        <section class="projects">
+            <div class="about__projects" id="Projects">
+                <div class="title-projects">
+                    <h3 class="title_p">Мои проекты</h3>
+                    <p class="subtitle_p">в открытом доступе</p>
+                </div>
+                <div class="card-projects">
+                    <div class="img-projects" id="myLanding">
+                        <img src="img/photovoltaic-solar-power-panel-field-green-clean-alternative-power-energy-concept-ai-generative.jpg" alt="">
+                        <p>Лэндинг сделанный во время прохождения
+                            курса в корпоративном
+                            университете Сбера&nbsp;</p>
+                    </div>
+                    <div class="img-projects" id="myGitHub">
+                        <img src="img/programming-background-with-html.jpg" alt="">
+                        <p>Мой GitHub&nbsp;</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="skills">
+            <div class="skills__container" id="Skills">
+                <div class="title-skills">
+                    <h3 class="title_s">Мои навыки</h3>
+                    <p class="subtitle_s">и образование</p>
+                </div>
+                <div class=skills-buttons>
+                    <div class="skills__nav">
+                        <button class="active" type="button" id="1">Навыки</button>
+                        <button type="button" id="2">Образование</button>
+                    </div>
+                    <div class="skills__item">
+                        <div class="skills-discr">
+                            <button>HTML</button>
+                            <button>CSS</button>
+                            <button>JavaScript</button>
+                            <button>Python</button>
+                            <button>C#</button>
+                            <button>Git</button>
+                            <button>Computer Science</button>
+                        </div>
+                        <div class="education-discr">
+                            <h3><i class="fa-solid fa-user-graduate" style="color: #000000;"></i>  Высшее (бакалавриат)</h3>
+                            <p>После колледжа и срочной службы в армии, а именно в 2022 году, поступил на кафедру Прикладной
+                                информатики Северо-Кавказского Федерального Университета, где учусь до сих пор. <br> Заочная форма.
+                                Выпуск на 2027 год.</p>
+                            <h3><i class="fa-solid fa-gear" style="color: #000000;"></i>  Среднее специальное</h3>
+                            <p>Получил в 2021 году в Колледже связи им. Героя Советского Союза В.А. Петрова. Направление
+                                "Многоканальные
+                                телекоммуникационные системы". <br>
+                                Именно здесь в полной мере заинтересовался информационными системами и программированием</з> <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </content>
+    <footer class="footer">
+        <div class="footer__info" id="Contacts">
+            <div class="footer-contacts">
+                <a href="#!" id="copyTel"><i class="fa-solid fa-phone" style="color: #ffffff;"></i>   Телефон</a>
+                <a href="#!" id="copyMail"><i class="fa-regular fa-envelope" style="color: #ffffff;"></i>   Почта</a>
+                <a href="https://hh.ru/resume/f3d7a63fff0d810aff0039ed1f395455543747"><i class="fa-solid fa-id-card" style="color: #ffffff;"></i>   hh</a>
             </div>
         </div>
     </footer>
-    <script>
-        let skills = document.querySelectorAll(".skills__btn button");
-        let colors = ["rgb(242,101,39)", "rgb(46,157,215)", "rgb(254,218,59)", "green", "rgb(240,80,51)", "grey"];
-        skills.forEach((el, index) => {
-            el.style.backgroundColor = colors[index];
-        });
-
-        function scrollIntoSection(sectionId) {
-            const section = document.getElementById(sectionId);
-            if (section) {
-                section.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
-
-        let topbtn = document.querySelectorAll(".btns button");
-        topbtn.forEach(element => {
-            element.addEventListener("mouseover", () => {
-                element.classList.add("btns__changed");
-            });
-            element.addEventListener("mouseout", () => {
-                element.classList.remove("btns__changed");
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
-
 </html>
